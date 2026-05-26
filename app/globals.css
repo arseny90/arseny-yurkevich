@@ -47,6 +47,20 @@ button {
   color: #ffffff;
 }
 
+.screen-fade {
+  animation: screen-fade 180ms ease-out both;
+}
+
+@keyframes screen-fade {
+  from {
+    opacity: 0.92;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

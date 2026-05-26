@@ -595,21 +595,23 @@ export default function ArtistWebsite() {
 
   return (
     <main className="min-h-[100svh] bg-white text-black md:min-h-screen">
-      {screen === "home" ? (
-        <HomeScreen onNavigate={handleNavigate} />
-      ) : (
-        <>
-          <InnerHeader current={screen} onNavigate={handleNavigate} />
-          {screen === "video" ? (
-            <VideoScreen
-              selectedVideo={selectedVideo}
-              onSelectVideo={setSelectedVideo}
-            />
-          ) : null}
-          {screen === "about" ? <AboutScreen /> : null}
-          {screen === "contacts" ? <ContactsScreen /> : null}
-        </>
-      )}
+      <div key={screen} className="screen-fade">
+        {screen === "home" ? (
+          <HomeScreen onNavigate={handleNavigate} />
+        ) : (
+          <>
+            <InnerHeader current={screen} onNavigate={handleNavigate} />
+            {screen === "video" ? (
+              <VideoScreen
+                selectedVideo={selectedVideo}
+                onSelectVideo={setSelectedVideo}
+              />
+            ) : null}
+            {screen === "about" ? <AboutScreen /> : null}
+            {screen === "contacts" ? <ContactsScreen /> : null}
+          </>
+        )}
+      </div>
     </main>
   );
 }

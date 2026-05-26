@@ -8,10 +8,30 @@ const manrope = Manrope({
   variable: "--font-manrope",
 });
 
+const siteUrl = "https://arsenyyurkevich.ru";
+const title = "Ведущий Арсений Юркевич";
+const description = "Без тирании позитива. УрФО, Москва, Россия.";
+
 export const metadata: Metadata = {
-  title: "Ведущий Арсений Юркевич",
-  description:
-    "Ведущий Арсений Юркевич. Без тирании позитива. УрФО, Москва, Россия.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  icons: {
+    icon: "/favicon.svg",
+  },
+  openGraph: {
+    title,
+    description,
+    url: siteUrl,
+    images: ["/images/home-desktop.jpg"],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/images/home-desktop.jpg"],
+  },
 };
 
 export default function RootLayout({
