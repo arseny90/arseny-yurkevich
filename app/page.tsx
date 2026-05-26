@@ -444,7 +444,11 @@ function AboutScreen() {
 
 function TelegramIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 md:h-6 md:w-6">
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      className="h-[18px] w-[18px] md:h-6 md:w-6"
+    >
       <path
         fill="#229ED9"
         d="M12 24c6.63 0 12-5.37 12-12S18.63 0 12 0 0 5.37 0 12s5.37 12 12 12Z"
@@ -459,7 +463,11 @@ function TelegramIcon() {
 
 function InstagramIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 md:h-6 md:w-6">
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      className="h-[18px] w-[18px] md:h-6 md:w-6"
+    >
       <rect width="24" height="24" rx="5.5" fill="#E4405F" />
       <path
         fill="#FFFFFF"
@@ -471,7 +479,11 @@ function InstagramIcon() {
 
 function VkIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 md:h-6 md:w-6">
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      className="h-[18px] w-[18px] md:h-6 md:w-6"
+    >
       <rect width="24" height="24" rx="5.5" fill="#0077FF" />
       <path
         fill="#FFFFFF"
@@ -486,7 +498,7 @@ function PhoneIcon() {
     <svg
       viewBox="0 0 24 24"
       aria-hidden="true"
-      className="h-5 w-5 text-white md:h-6 md:w-6"
+      className="h-[18px] w-[18px] text-white md:h-6 md:w-6"
     >
       <path
         fill="currentColor"
@@ -533,9 +545,9 @@ function ContactsScreen() {
         imageClassName="object-[42%_center] md:object-[35%_42%]"
       />
 
-      <div className="relative z-10 flex min-h-[calc(100svh-65px)] items-start px-4 pb-4 pt-4 md:min-h-[calc(100vh-81px)] md:items-center md:px-6 md:py-24 xl:px-8">
-        <div className="w-[min(52vw,205px)] bg-black/55 px-2.5 py-2.5 text-white md:w-[220px] md:px-4 md:py-4 lg:w-[240px] xl:w-[280px]">
-          <h2 className="mb-2 text-[clamp(1.35rem,6vw,1.65rem)] font-light uppercase leading-none md:mb-4 md:text-[clamp(1.8rem,2.5vw,2.75rem)]">
+      <div className="relative z-10 flex min-h-[calc(100svh-65px)] items-start px-3 pb-3 pt-3 md:min-h-[calc(100vh-81px)] md:items-center md:px-6 md:py-24 xl:px-8">
+        <div className="w-[min(46vw,176px)] bg-black/55 px-2 py-2 text-white md:w-[220px] md:px-4 md:py-4 lg:w-[240px] xl:w-[280px]">
+          <h2 className="mb-1.5 text-[clamp(1.15rem,5.4vw,1.45rem)] font-light uppercase leading-none md:mb-4 md:text-[clamp(1.8rem,2.5vw,2.75rem)]">
             CONTACTS
           </h2>
 
@@ -546,7 +558,7 @@ function ContactsScreen() {
                 href={link.href}
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noreferrer" : undefined}
-                className="flex items-center gap-2 border-b border-white py-1.5 text-[clamp(0.72rem,3vw,0.84rem)] font-light uppercase leading-none outline-none transition-opacity hover:opacity-70 focus-visible:opacity-70 md:gap-3 md:py-2 md:text-base xl:text-lg"
+                className="flex items-center gap-1.5 border-b border-white py-1 text-[clamp(0.76rem,3vw,0.82rem)] font-light uppercase leading-none outline-none transition-opacity hover:opacity-70 focus-visible:opacity-70 md:gap-3 md:py-2 md:text-base xl:text-lg"
               >
                 {link.icon}
                 <span>{link.label}</span>
